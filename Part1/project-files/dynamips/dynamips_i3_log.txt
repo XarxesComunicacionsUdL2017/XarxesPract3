@@ -1,0 +1,67 @@
+Jun 11 22:49:20.639 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Jun 11 22:49:20.639 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 48031.
+Jun 11 22:49:20.668 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 11 22:49:20.669 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jaume/Dropbox/UdL/Xarxes2/XarxesPract3/Part1/project-files/dynamips 
+Jun 11 22:49:20.669 GENERAL: working_dir=/home/jaume/Dropbox/UdL/Xarxes2/XarxesPract3/Part1/project-files/dynamips
+Jun 11 22:49:20.671 HYPERVISOR: exec_cmd: vm create SLB1 4 c7200 
+Jun 11 22:49:20.671 VM: VM SLB1 created.
+Jun 11 22:49:20.673 HYPERVISOR: exec_cmd: vm set_con_tcp_port SLB1 5002 
+Jun 11 22:49:20.675 HYPERVISOR: exec_cmd: c7200 get_mac_addr SLB1 
+Jun 11 22:49:20.679 HYPERVISOR: exec_cmd: vm get_status SLB1 
+Jun 11 22:49:20.680 HYPERVISOR: exec_cmd: vm slot_add_binding SLB1 0 0 C7200-IO-FE 
+Jun 11 22:49:20.684 HYPERVISOR: exec_cmd: vm get_status SLB1 
+Jun 11 22:49:20.685 HYPERVISOR: exec_cmd: vm slot_add_binding SLB1 2 0 PA-FE-TX 
+Jun 11 22:49:20.688 HYPERVISOR: exec_cmd: vm set_nvram SLB1 512 
+Jun 11 22:49:20.690 HYPERVISOR: exec_cmd: vm set_ram SLB1 512 
+Jun 11 22:49:20.693 HYPERVISOR: exec_cmd: vm get_status SLB1 
+Jun 11 22:49:20.694 HYPERVISOR: exec_cmd: vm slot_remove_binding SLB1 0 0 
+Jun 11 22:49:20.696 HYPERVISOR: exec_cmd: vm get_status SLB1 
+Jun 11 22:49:20.698 HYPERVISOR: exec_cmd: vm slot_add_binding SLB1 0 0 C7200-IO-2FE 
+Jun 11 22:49:20.700 HYPERVISOR: exec_cmd: c7200 set_mac_addr SLB1 ca04.6a9f.0000 
+Jun 11 22:49:20.703 HYPERVISOR: exec_cmd: vm get_status SLB1 
+Jun 11 22:49:20.705 HYPERVISOR: exec_cmd: vm slot_add_binding SLB1 1 0 PA-FE-TX 
+Jun 11 22:49:20.708 HYPERVISOR: exec_cmd: vm set_disk0 SLB1 0 
+Jun 11 22:49:20.710 HYPERVISOR: exec_cmd: vm get_status SLB1 
+Jun 11 22:49:20.712 HYPERVISOR: exec_cmd: vm set_idle_pc SLB1 0x608724c0 
+Jun 11 22:49:20.716 HYPERVISOR: exec_cmd: vm set_ios SLB1 /home/jaume/GNS3/images/IOS/c7200-jk9s-mz.124-13b.image 
+Jun 11 22:49:20.720 HYPERVISOR: exec_cmd: vm set_config SLB1 configs/i4_startup-config.cfg 
+Jun 11 22:49:20.963 HYPERVISOR: exec_cmd: nio create_udp udp-b240032a-9963-4df6-bfca-3d81e5449f65 10008 127.0.0.1 10009 
+Jun 11 22:49:20.971 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SLB1 0 1 udp-b240032a-9963-4df6-bfca-3d81e5449f65 
+Jun 11 22:49:20.980 HYPERVISOR: exec_cmd: vm get_status SLB1 
+Jun 11 22:49:21.032 HYPERVISOR: exec_cmd: nio create_udp udp-140ee434-f32c-4250-af86-fe0a5b795d25 10011 127.0.0.1 10010 
+Jun 11 22:49:21.034 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SLB1 0 0 udp-140ee434-f32c-4250-af86-fe0a5b795d25 
+Jun 11 22:49:21.034 HYPERVISOR: exec_cmd: vm get_status SLB1 
+Jun 11 22:49:23.159 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Jun 11 22:49:23.160 VM: VM Ghost created.
+Jun 11 22:49:23.171 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/jaume/GNS3/images/IOS/c7200-jk9s-mz.124-13b.image 
+Jun 11 22:49:23.172 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jun 11 22:49:23.174 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c7200-jk9s-mz.124-13b.image-512.ghost 
+Jun 11 22:49:23.175 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Jun 11 22:49:23.176 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 11 22:49:23.180 HYPERVISOR: exec_cmd: vm start Ghost 
+Jun 11 22:49:23.518 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 11 22:49:23.519 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jun 11 22:49:23.633 VM: VM Ghost shutdown.
+Jun 11 22:49:23.634 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jun 11 22:49:23.634 VM: VM Ghost destroyed.
+Jun 11 22:49:23.637 HYPERVISOR: exec_cmd: vm set_ghost_status SLB1 2 
+Jun 11 22:49:23.638 HYPERVISOR: exec_cmd: vm set_ghost_file SLB1 c7200-jk9s-mz.124-13b.image-512.ghost 
+Jun 11 22:49:23.639 HYPERVISOR: exec_cmd: vm get_status SLB1 
+Jun 11 22:49:23.640 HYPERVISOR: exec_cmd: vm start SLB1 
+Jun 11 22:54:39.070 HYPERVISOR: exec_cmd: vm get_status SLB1 
+Jun 11 22:54:39.071 HYPERVISOR: exec_cmd: vm stop SLB1 
+Jun 11 22:54:39.196 VM: VM SLB1 shutdown.
+Jun 11 22:54:39.197 HYPERVISOR: exec_cmd: vm extract_config SLB1 
+Jun 11 22:55:36.600 HYPERVISOR: exec_cmd: vm get_status SLB1 
+Jun 11 22:55:36.601 HYPERVISOR: exec_cmd: vm start SLB1 
+Jun 11 22:55:40.619 HYPERVISOR: exec_cmd: vm get_status SLB1 
+Jun 11 22:55:40.624 HYPERVISOR: exec_cmd: vm stop SLB1 
+Jun 11 22:55:40.767 VM: VM SLB1 shutdown.
+Jun 11 22:55:40.770 HYPERVISOR: exec_cmd: vm extract_config SLB1 
+Jun 11 22:55:42.066 HYPERVISOR: exec_cmd: vm get_status SLB1 
+Jun 11 22:55:42.070 HYPERVISOR: exec_cmd: vm extract_config SLB1 
+Jun 11 22:55:42.072 HYPERVISOR: exec_cmd: vm delete SLB1 
+Jun 11 22:55:42.072 VM: VM SLB1 destroyed.
+Jun 11 22:55:42.075 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 11 22:55:42.564 HYPERVISOR: Stopped.
+Jun 11 22:55:42.564 GENERAL: reset done.

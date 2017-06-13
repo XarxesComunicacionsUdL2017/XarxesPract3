@@ -1,0 +1,873 @@
+{
+    "auto_start": false,
+    "name": "Part1",
+    "project_id": "8528d777-c65e-4d92-8935-4f9c276fcebd",
+    "revision": 4,
+    "show_port_names": true,
+    "topology": {
+        "ellipses": [
+            {
+                "border_style": 2,
+                "height": 174.0,
+                "width": 482.0,
+                "x": -297.0,
+                "y": -403.0
+            },
+            {
+                "border_color": "#ef2929",
+                "border_style": 2,
+                "color": "#afabab",
+                "height": 135.0,
+                "width": 463.0,
+                "x": -273.0,
+                "y": -147.0
+            },
+            {
+                "border_color": "#3465a4",
+                "border_style": 2,
+                "color": "#ffffff",
+                "height": 372.0,
+                "transparency": 22,
+                "width": 783.0,
+                "x": -451.0,
+                "y": -420.0,
+                "z": -1.0
+            },
+            {
+                "border_color": "#3465a4",
+                "border_style": 2,
+                "color": "#ffffff",
+                "height": 372.0,
+                "transparency": 22,
+                "width": 783.0,
+                "x": -451.0,
+                "y": -103.0,
+                "z": -1.0
+            }
+        ],
+        "links": [
+            {
+                "description": "Link from R2 port FastEthernet0/0 to SW1 port 2",
+                "destination_node_id": 4,
+                "destination_port_id": 14,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "2",
+                    "x": 65.6253601836691,
+                    "y": -26.174351562727935
+                },
+                "id": 1,
+                "source_node_id": 3,
+                "source_port_id": 11,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": -3.1253601836690947,
+                    "y": 39.17435156272791
+                }
+            },
+            {
+                "description": "Link from Host1 port nio_tap:tap0 to SW2 port 3",
+                "destination_node_id": 7,
+                "destination_port_id": 31,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "3",
+                    "x": 35.5,
+                    "y": 32.0
+                },
+                "id": 2,
+                "source_node_id": 8,
+                "source_port_id": 57,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "nio_tap:tap0",
+                    "x": 37.5,
+                    "y": -22.5
+                }
+            },
+            {
+                "description": "Link from SLB1 port FastEthernet0/1 to SW2 port 1",
+                "destination_node_id": 7,
+                "destination_port_id": 29,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "1",
+                    "x": -12.784271247461902,
+                    "y": -16.2842712474619
+                },
+                "id": 3,
+                "source_node_id": 5,
+                "source_port_id": 24,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/1",
+                    "x": 64.2842712474619,
+                    "y": 29.284271247461902
+                }
+            },
+            {
+                "description": "Link from SW1 port 3 to SLB1 port FastEthernet0/0",
+                "destination_node_id": 5,
+                "destination_port_id": 23,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": 56.96930825449914,
+                    "y": -10.022995828010835
+                },
+                "id": 4,
+                "source_node_id": 4,
+                "source_port_id": 15,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "3",
+                    "x": 17.53069174550086,
+                    "y": 40.022995828010835
+                }
+            },
+            {
+                "description": "Link from R1 port FastEthernet0/0 to SW1 port 1",
+                "destination_node_id": 4,
+                "destination_port_id": 13,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "1",
+                    "x": -3.8946903728700164,
+                    "y": -23.595978810028726
+                },
+                "id": 5,
+                "source_node_id": 2,
+                "source_port_id": 7,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": 25.394690372870002,
+                    "y": 39.595978810028726
+                }
+            },
+            {
+                "description": "Link from SW1 port 4 to SLB2 port FastEthernet0/0",
+                "destination_node_id": 6,
+                "destination_port_id": 27,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": -29.59581411177831,
+                    "y": -13.29918816940146
+                },
+                "id": 6,
+                "source_node_id": 4,
+                "source_port_id": 16,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "4",
+                    "x": 36.09581411177831,
+                    "y": 41.299188169401475
+                }
+            },
+            {
+                "description": "Link from SLB2 port FastEthernet0/1 to SW2 port 2",
+                "destination_node_id": 7,
+                "destination_port_id": 30,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "2",
+                    "x": 69.438676918688,
+                    "y": -16.625693564229504
+                },
+                "id": 7,
+                "source_node_id": 6,
+                "source_port_id": 28,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/1",
+                    "x": -35.938676918687996,
+                    "y": 32.62569356422951
+                }
+            }
+        ],
+        "nodes": [
+            {
+                "description": "Router c7200",
+                "dynamips_id": 2,
+                "id": 2,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R1",
+                    "x": 19.484375,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 1,
+                        "id": 6,
+                        "name": "FastEthernet1/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to SW1 on port 1",
+                        "id": 7,
+                        "link_id": 5,
+                        "name": "FastEthernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 8,
+                        "name": "FastEthernet0/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 5,
+                        "name": "FastEthernet2/0",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "clock_divisor": 4,
+                    "console": 5000,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x608724c0",
+                    "idlesleep": 30,
+                    "image": "c7200-jk9s-mz.124-13b.image",
+                    "image_md5sum": "fa32924180f470cab7430f00d1501673",
+                    "mac_addr": "ca02.6064.0000",
+                    "midplane": "vxr",
+                    "mmap": true,
+                    "name": "R1",
+                    "npe": "npe-400",
+                    "nvram": 512,
+                    "platform": "c7200",
+                    "power_supplies": [
+                        1,
+                        1
+                    ],
+                    "ram": 512,
+                    "sensors": [
+                        22,
+                        22,
+                        22,
+                        22
+                    ],
+                    "slot0": "C7200-IO-2FE",
+                    "slot1": "PA-FE-TX",
+                    "slot2": "PA-FE-TX",
+                    "sparsemem": true,
+                    "startup_config": "configs/i2_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 1,
+                "type": "C7200",
+                "vm_id": "8ad01648-9673-46ad-84a9-df1af9a72854",
+                "x": -203.0,
+                "y": -325.0
+            },
+            {
+                "description": "Router c7200",
+                "dynamips_id": 3,
+                "id": 3,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R2",
+                    "x": 19.484375,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 1,
+                        "id": 10,
+                        "name": "FastEthernet1/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to SW1 on port 2",
+                        "id": 11,
+                        "link_id": 1,
+                        "name": "FastEthernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 12,
+                        "name": "FastEthernet0/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 9,
+                        "name": "FastEthernet2/0",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "clock_divisor": 4,
+                    "console": 5001,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x608724c0",
+                    "idlesleep": 30,
+                    "image": "c7200-jk9s-mz.124-13b.image",
+                    "image_md5sum": "fa32924180f470cab7430f00d1501673",
+                    "mac_addr": "ca03.607b.0000",
+                    "midplane": "vxr",
+                    "mmap": true,
+                    "name": "R2",
+                    "npe": "npe-400",
+                    "nvram": 512,
+                    "platform": "c7200",
+                    "power_supplies": [
+                        1,
+                        1
+                    ],
+                    "ram": 512,
+                    "sensors": [
+                        22,
+                        22,
+                        22,
+                        22
+                    ],
+                    "slot0": "C7200-IO-2FE",
+                    "slot1": "PA-FE-TX",
+                    "slot2": "PA-FE-TX",
+                    "sparsemem": true,
+                    "startup_config": "configs/i3_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 1,
+                "type": "C7200",
+                "vm_id": "90b07865-b900-48dc-a8a0-f4773a4e595a",
+                "x": 44.0,
+                "y": -326.0
+            },
+            {
+                "description": "Ethernet switch",
+                "device_id": "90f171f2-a1a5-4c38-b4a6-c6f40da820d4",
+                "id": 4,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "SW1",
+                    "x": 21.140625,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "description": "connected to R1 on port FastEthernet0/0",
+                        "id": 13,
+                        "link_id": 5,
+                        "name": "1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "description": "connected to R2 on port FastEthernet0/0",
+                        "id": 14,
+                        "link_id": 1,
+                        "name": "2",
+                        "nio": "NIO_UDP",
+                        "port_number": 2,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "description": "connected to SLB1 on port FastEthernet0/0",
+                        "id": 15,
+                        "link_id": 4,
+                        "name": "3",
+                        "nio": "NIO_UDP",
+                        "port_number": 3,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "description": "connected to SLB2 on port FastEthernet0/0",
+                        "id": 16,
+                        "link_id": 6,
+                        "name": "4",
+                        "nio": "NIO_UDP",
+                        "port_number": 4,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 17,
+                        "name": "5",
+                        "port_number": 5,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 18,
+                        "name": "6",
+                        "port_number": 6,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 19,
+                        "name": "7",
+                        "port_number": 7,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 20,
+                        "name": "8",
+                        "port_number": 8,
+                        "type": "access",
+                        "vlan": 1
+                    }
+                ],
+                "properties": {
+                    "name": "SW1"
+                },
+                "server_id": 1,
+                "type": "EthernetSwitch",
+                "x": -80.5,
+                "y": -250.0
+            },
+            {
+                "description": "Router c7200",
+                "dynamips_id": 4,
+                "id": 5,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "SLB1",
+                    "x": -46.2890625,
+                    "y": 8.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 1,
+                        "id": 22,
+                        "name": "FastEthernet1/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to SW1 on port 3",
+                        "id": 23,
+                        "link_id": 4,
+                        "name": "FastEthernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to SW2 on port 1",
+                        "id": 24,
+                        "link_id": 3,
+                        "name": "FastEthernet0/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 21,
+                        "name": "FastEthernet2/0",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "clock_divisor": 4,
+                    "console": 5002,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x608724c0",
+                    "idlesleep": 30,
+                    "image": "c7200-jk9s-mz.124-13b.image",
+                    "image_md5sum": "fa32924180f470cab7430f00d1501673",
+                    "mac_addr": "ca04.6a9f.0000",
+                    "midplane": "vxr",
+                    "mmap": true,
+                    "name": "SLB1",
+                    "npe": "npe-400",
+                    "nvram": 512,
+                    "platform": "c7200",
+                    "power_supplies": [
+                        1,
+                        1
+                    ],
+                    "ram": 512,
+                    "sensors": [
+                        22,
+                        22,
+                        22,
+                        22
+                    ],
+                    "slot0": "C7200-IO-2FE",
+                    "slot1": "PA-FE-TX",
+                    "slot2": "PA-FE-TX",
+                    "sparsemem": true,
+                    "startup_config": "configs/i4_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 1,
+                "type": "C7200",
+                "vm_id": "22628533-4f88-43b0-a385-534642510aca",
+                "x": -203.0,
+                "y": -89.0
+            },
+            {
+                "description": "Router c7200",
+                "dynamips_id": 5,
+                "id": 6,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "SLB2",
+                    "x": 65.7109375,
+                    "y": 9.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 1,
+                        "id": 26,
+                        "name": "FastEthernet1/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to SW1 on port 4",
+                        "id": 27,
+                        "link_id": 6,
+                        "name": "FastEthernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to SW2 on port 2",
+                        "id": 28,
+                        "link_id": 7,
+                        "name": "FastEthernet0/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 25,
+                        "name": "FastEthernet2/0",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "clock_divisor": 4,
+                    "console": 5003,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x608724c0",
+                    "idlesleep": 30,
+                    "image": "c7200-jk9s-mz.124-13b.image",
+                    "image_md5sum": "fa32924180f470cab7430f00d1501673",
+                    "mac_addr": "ca05.6ab6.0000",
+                    "midplane": "vxr",
+                    "mmap": true,
+                    "name": "SLB2",
+                    "npe": "npe-400",
+                    "nvram": 512,
+                    "platform": "c7200",
+                    "power_supplies": [
+                        1,
+                        1
+                    ],
+                    "ram": 512,
+                    "sensors": [
+                        22,
+                        22,
+                        22,
+                        22
+                    ],
+                    "slot0": "C7200-IO-2FE",
+                    "slot1": "PA-FE-TX",
+                    "slot2": "PA-FE-TX",
+                    "sparsemem": true,
+                    "startup_config": "configs/i5_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 1,
+                "type": "C7200",
+                "vm_id": "78a2a6c3-be75-4aa9-872e-8ab7620eca44",
+                "x": 44.0,
+                "y": -89.0
+            },
+            {
+                "description": "Ethernet switch",
+                "device_id": "308cc3e8-47ff-44ec-bbe1-03c914533d24",
+                "id": 7,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "SW2",
+                    "x": 15.140625,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "description": "connected to SLB1 on port FastEthernet0/1",
+                        "id": 29,
+                        "link_id": 3,
+                        "name": "1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "description": "connected to SLB2 on port FastEthernet0/1",
+                        "id": 30,
+                        "link_id": 7,
+                        "name": "2",
+                        "nio": "NIO_UDP",
+                        "port_number": 2,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "description": "connected to Host1 on port nio_tap:tap0",
+                        "id": 31,
+                        "link_id": 2,
+                        "name": "3",
+                        "nio": "NIO_TAP",
+                        "port_number": 3,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 32,
+                        "name": "4",
+                        "port_number": 4,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 33,
+                        "name": "5",
+                        "port_number": 5,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 34,
+                        "name": "6",
+                        "port_number": 6,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 35,
+                        "name": "7",
+                        "port_number": 7,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 36,
+                        "name": "8",
+                        "port_number": 8,
+                        "type": "access",
+                        "vlan": 1
+                    }
+                ],
+                "properties": {
+                    "name": "SW2"
+                },
+                "server_id": 1,
+                "type": "EthernetSwitch",
+                "x": -80.5,
+                "y": 42.0
+            },
+            {
+                "description": "Host",
+                "id": 8,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "Host1",
+                    "x": 5.1171875,
+                    "y": 60.0
+                },
+                "ports": [
+                    {
+                        "id": 37,
+                        "name": "nio_gen_eth:lo",
+                        "stub": true
+                    },
+                    {
+                        "id": 39,
+                        "name": "nio_gen_eth:virbr0-nic",
+                        "stub": true
+                    },
+                    {
+                        "description": "connected to SW2 on port 3",
+                        "id": 57,
+                        "link_id": 2,
+                        "name": "nio_tap:tap0",
+                        "nio": "NIO_TAP",
+                        "stub": true
+                    },
+                    {
+                        "id": 38,
+                        "name": "nio_gen_eth:virbr0",
+                        "stub": true
+                    },
+                    {
+                        "id": 40,
+                        "name": "nio_gen_eth:wlp1s0",
+                        "stub": true
+                    }
+                ],
+                "properties": {
+                    "name": "Host1",
+                    "nios": [
+                        "nio_gen_eth:lo",
+                        "nio_gen_eth:virbr0-nic",
+                        "nio_tap:tap0",
+                        "nio_gen_eth:virbr0",
+                        "nio_gen_eth:wlp1s0"
+                    ]
+                },
+                "server_id": 1,
+                "type": "Host",
+                "x": -77.5,
+                "y": 176.5
+            }
+        ],
+        "notes": [
+            {
+                "color": "#ff204a87",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "SERVER FARM",
+                "x": -104.0,
+                "y": -359.5
+            },
+            {
+                "color": "#ffef2929",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "GLBP\n NAT",
+                "x": 85.0,
+                "y": -123.5
+            },
+            {
+                "color": "#ffef2929",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "VIP: 10.0.0.10",
+                "x": -99.0,
+                "y": -87.5
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "11.0.0.3",
+                "x": -192.0,
+                "y": -273.5
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "11.0.0.4",
+                "x": 29.0,
+                "y": -273.5
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "11.0.0.1",
+                "x": -142.0,
+                "y": -115.5
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "11.0.0.2",
+                "x": -18.0,
+                "y": -117.5
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "10.0.0.1",
+                "x": -132.0,
+                "y": -47.5
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "10.0.0.2",
+                "x": -32.0,
+                "y": -43.5
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "10.0.0.3",
+                "x": -37.0,
+                "y": 139.5
+            },
+            {
+                "color": "#ff3465a4",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "Outside Zone",
+                "x": 213.0,
+                "y": -219.5
+            },
+            {
+                "color": "#ff3465a4",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "Inside Zone",
+                "x": 234.0,
+                "y": 72.5
+            }
+        ],
+        "servers": [
+            {
+                "host": "127.0.0.1",
+                "id": 1,
+                "local": true,
+                "port": 3080,
+                "protocol": "http",
+                "vm": false
+            }
+        ]
+    },
+    "type": "topology",
+    "version": "1.5.2"
+}

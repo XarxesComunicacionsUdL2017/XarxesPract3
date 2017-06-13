@@ -1,0 +1,19 @@
+Jun 11 22:49:20.605 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Jun 11 22:49:20.605 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 32839.
+Jun 11 22:49:20.636 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 11 22:49:20.637 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jaume/Dropbox/UdL/Xarxes2/XarxesPract3/Part1/project-files/dynamips 
+Jun 11 22:49:20.637 GENERAL: working_dir=/home/jaume/Dropbox/UdL/Xarxes2/XarxesPract3/Part1/project-files/dynamips
+Jun 11 22:49:20.638 HYPERVISOR: exec_cmd: ethsw create SW2 
+Jun 11 22:49:20.659 HYPERVISOR: exec_cmd: nio create_tap tap-2fb2d30b-f1a9-4e05-b014-cc527d8e8ef1 tap0 
+Jun 11 22:49:20.664 HYPERVISOR: exec_cmd: ethsw add_nio SW2 tap-2fb2d30b-f1a9-4e05-b014-cc527d8e8ef1 
+Jun 11 22:49:20.674 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 tap-2fb2d30b-f1a9-4e05-b014-cc527d8e8ef1 1 
+Jun 11 22:49:20.873 HYPERVISOR: exec_cmd: nio create_udp udp-d02a8d94-1a7d-4c7e-9249-d16409562c0d 10002 127.0.0.1 10001 
+Jun 11 22:49:20.889 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-d02a8d94-1a7d-4c7e-9249-d16409562c0d 
+Jun 11 22:49:20.910 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-d02a8d94-1a7d-4c7e-9249-d16409562c0d 1 
+Jun 11 22:49:20.970 HYPERVISOR: exec_cmd: nio create_udp udp-05cf8c38-a246-467b-8330-29efaad7c748 10009 127.0.0.1 10008 
+Jun 11 22:49:20.979 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-05cf8c38-a246-467b-8330-29efaad7c748 
+Jun 11 22:49:20.997 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-05cf8c38-a246-467b-8330-29efaad7c748 1 
+Jun 11 22:55:41.687 HYPERVISOR: exec_cmd: ethsw delete SW2 
+Jun 11 22:55:41.742 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 11 22:55:42.040 HYPERVISOR: Stopped.
+Jun 11 22:55:42.040 GENERAL: reset done.

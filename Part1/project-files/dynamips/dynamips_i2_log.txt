@@ -1,0 +1,22 @@
+Jun 11 22:49:20.484 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Jun 11 22:49:20.484 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50251.
+Jun 11 22:49:20.514 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 11 22:49:20.526 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jaume/Dropbox/UdL/Xarxes2/XarxesPract3/Part1/project-files/dynamips 
+Jun 11 22:49:20.527 GENERAL: working_dir=/home/jaume/Dropbox/UdL/Xarxes2/XarxesPract3/Part1/project-files/dynamips
+Jun 11 22:49:20.538 HYPERVISOR: exec_cmd: ethsw create SW1 
+Jun 11 22:49:20.888 HYPERVISOR: exec_cmd: nio create_udp udp-c28410d8-4155-4a1f-943a-c645bc3f939a 10000 127.0.0.1 10004 
+Jun 11 22:49:20.893 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-c28410d8-4155-4a1f-943a-c645bc3f939a 
+Jun 11 22:49:20.923 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-c28410d8-4155-4a1f-943a-c645bc3f939a 1 
+Jun 11 22:49:20.941 HYPERVISOR: exec_cmd: nio create_udp udp-a6f38188-8865-4f6b-9ead-0897881650ae 10005 127.0.0.1 10003 
+Jun 11 22:49:20.958 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-a6f38188-8865-4f6b-9ead-0897881650ae 
+Jun 11 22:49:20.980 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-a6f38188-8865-4f6b-9ead-0897881650ae 1 
+Jun 11 22:49:20.994 HYPERVISOR: exec_cmd: nio create_udp udp-cfd73dec-0e0e-420f-88d7-a0b6e1eba36e 10006 127.0.0.1 10007 
+Jun 11 22:49:20.997 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-cfd73dec-0e0e-420f-88d7-a0b6e1eba36e 
+Jun 11 22:49:21.016 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-cfd73dec-0e0e-420f-88d7-a0b6e1eba36e 1 
+Jun 11 22:49:21.026 HYPERVISOR: exec_cmd: nio create_udp udp-24520389-9c9d-431d-ae30-713570700b08 10010 127.0.0.1 10011 
+Jun 11 22:49:21.033 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-24520389-9c9d-431d-ae30-713570700b08 
+Jun 11 22:49:21.042 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-24520389-9c9d-431d-ae30-713570700b08 1 
+Jun 11 22:55:41.688 HYPERVISOR: exec_cmd: ethsw delete SW1 
+Jun 11 22:55:41.752 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 11 22:55:41.912 HYPERVISOR: Stopped.
+Jun 11 22:55:41.912 GENERAL: reset done.

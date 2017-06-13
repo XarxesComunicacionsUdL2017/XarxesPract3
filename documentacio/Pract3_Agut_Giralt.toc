@@ -1,0 +1,11 @@
+\select@language {catalan}
+\contentsline {section}{\numberline {1}Objectius}{3}{section.1}
+\contentsline {section}{\numberline {2}Full Redundant SLB}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Topologia de la xarxa}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Principals problemes de configuraci\IeC {\'o} i com ho hem solucionat}{3}{subsection.2.2}
+\contentsline {section}{\numberline {3}Proves de connexi\IeC {\'o}}{4}{section.3}
+\contentsline {section}{\numberline {4}SNMP}{7}{section.4}
+\contentsline {subsection}{\numberline {4.1}Introducci\IeC {\'o}}{7}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Executar el programa}{7}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Estructura del programa}{7}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Procediments}{7}{subsection.4.4}
